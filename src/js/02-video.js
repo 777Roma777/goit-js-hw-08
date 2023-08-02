@@ -13,5 +13,5 @@ player.on('timeupdate', throttle(onPlay, 1000));
 const timeStart = localStorage.getItem(CURRENT_TIME);
 
 if (timeStart) {
-  player.setCurrentTime(CURRENT_TIME);
+  player.setCurrentTime(timeStart);
 }
