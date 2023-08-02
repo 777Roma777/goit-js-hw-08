@@ -9,6 +9,11 @@ feedbackForm.addEventListener('submit', submitForm);
 
 loadFormState();
 
+let formData = {
+  email: "",
+  message: "",
+};
+
 function updateFormState() {
   formData = {
     email: feedbackForm.email.value,
