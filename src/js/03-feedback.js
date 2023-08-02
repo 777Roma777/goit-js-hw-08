@@ -8,8 +8,7 @@ feedbackForm.message.addEventListener('input', throttle(updateFormState, 500));
 feedbackForm.addEventListener('submit', submitForm);
 
 loadFormState();
-
-
+updateFormState();
 
 function updateFormState() {
   formData = {
