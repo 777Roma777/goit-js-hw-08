@@ -3,6 +3,11 @@ import throttle from 'lodash.throttle';
 const feedbackForm = document.querySelector('.feedback-form');
 const formKey = 'feed-back-form-data';
 
+let formData = {
+  email: '',
+  message: '',
+};
+
 feedbackForm.email.addEventListener('input', throttle(updateFormState, 500));
 feedbackForm.message.addEventListener('input', throttle(updateFormState, 500));
 feedbackForm.addEventListener('submit', submitForm);
